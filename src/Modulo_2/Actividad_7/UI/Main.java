@@ -22,4 +22,5 @@ public class Main {
         System.out.println("\niralo aqui todo acomodadito ay pero que bonito");
         arrayUtils.imprimirArray(arrayAleatorio);
     }
+    
 }
