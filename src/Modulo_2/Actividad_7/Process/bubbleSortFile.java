@@ -14,6 +14,7 @@ public class bubbleSortFile {
             intercambiado = false;
 
             for (int i = 1; i < n; i++) {
+                //Aqui se agrega a la cuenta un numero de la comparación ヽ(*・ω・)ﾉ
                 metricales.incrementComparacion();
                 
                 //La siguiente condicion checa si el elemento dado en el array es mayor al elemento siguiente, ya que si es verdad entonces tienen que intercambiarse <(￣︶￣)>
@@ -24,6 +25,7 @@ public class bubbleSortFile {
                     array[i - 1] = array[i];
                     array[i] = tem;
 
+                    //Aqui dejamos otro para contar los movimientos (￣▽￣)
                     metricales.incrementMovimientos();
 
                     //Aqui corroboramos que ya dado un intercambio, este fue exitoso en al menos una ocación (*¯︶¯*)

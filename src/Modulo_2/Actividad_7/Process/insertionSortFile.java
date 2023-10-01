@@ -14,9 +14,11 @@ public class insertionSortFile {
     
             // Mientras el elemento actual sea mayor que el elemento que se está comparando ヽ(*・ω・)ﾉ
             while (j >= 0 && array[j] > tem) {
+                //Aqui se agrega a la cuenta un numero de la comparación ヽ(*・ω・)ﾉ
                 metricales.incrementComparacion();
     
                 // Movemos el elemento actual a la derecha
+                //Aqui dejamos otro para contar los movimientos (￣▽￣)
                 array[j + 1] = array[j];
                 j--;
             }

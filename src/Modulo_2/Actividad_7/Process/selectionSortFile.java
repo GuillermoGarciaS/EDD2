@@ -13,6 +13,7 @@ public class selectionSortFile {
 
             //Este segundo ciclo anidado nos ayudara a recorrer la lista que aun no ha sido trabajada (─‿‿─)
             for (int j = i + 1; j < array.length; j++) {
+                //Aqui se agrega a la cuenta un numero de la comparación ヽ(*・ω・)ﾉ
                 metricales.incrementComparacion();
 
                 //Aqui creamos un ciclo comparatívo para poder encontrar un elemento menor que el ya guardado en el valor minimo
@@ -26,6 +27,7 @@ public class selectionSortFile {
             int tem = array[i];
             array[i] = array[min];
             array[min] = tem;
+            //Aqui dejamos otro para contar los movimientos (￣▽￣)
             metricales.incrementMovimientos();
         }
 
