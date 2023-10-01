@@ -1,24 +1,31 @@
 package Modulo_2.Actividad_7.Process;
 
+import Modulo_2.Actividad_7.Ordenamiento.metricas;
+
 public class insertionSortFile {
 
-    public static void insertionSort(int[] array) {
-         
-        //
+    public static void insertionSort(int[] array, metricas metricales) {
+
         for (int i = 1; i < array.length; i++) {
             int tem = array[i];
-            //La siguiente linea se encarga de asegurarnos que estamos comparando j con cualquier cosa que este detras de este (⌒‿⌒)
+    
+            // Inicializamos el índice del elemento que se está comparando con el elemento actual (⌒‿⌒)
             int j = i - 1;
-
+    
+            // Mientras el elemento actual sea mayor que el elemento que se está comparando ヽ(*・ω・)ﾉ
             while (j >= 0 && array[j] > tem) {
-                //Esta linea se encarga de mover el elemento a la derecha de nuestra actual posición ヽ(*・ω・)ﾉ
+                metricales.incrementComparacion();
+    
+                // Movemos el elemento actual a la derecha
                 array[j + 1] = array[j];
                 j--;
             }
-            //Y para finalizar, aqui insertamos el valor que esta en la variable temporal dentro del hueco que se crea (๑˃ᴗ˂)ﻭ
+    
+            // Insertamos el elemento que se está comparando en la posición correcta (๑˃ᴗ˂)ﻭ
             array[j + 1] = tem;
+            metricales.incrementMovimientos();
         }
-        
+    
     }
 
 }

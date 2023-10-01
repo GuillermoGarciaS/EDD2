@@ -1,8 +1,10 @@
 package Modulo_2.Actividad_7.Process;
 
+import Modulo_2.Actividad_7.Ordenamiento.metricas;
+
 public class bubbleSortFile {
 
-    public static void bubbleSort(int[] array) {
+    public static void bubbleSort(int[] array, metricas metricales) {
          
         int n = array.length;
         boolean intercambiado;
@@ -12,6 +14,7 @@ public class bubbleSortFile {
             intercambiado = false;
 
             for (int i = 1; i < n; i++) {
+                metricales.incrementComparacion();
                 
                 //La siguiente condicion checa si el elemento dado en el array es mayor al elemento siguiente, ya que si es verdad entonces tienen que intercambiarse <(￣︶￣)>
                 if (array[i - 1] > array[i]) {
@@ -20,6 +23,8 @@ public class bubbleSortFile {
                     int tem = array[i - 1];
                     array[i - 1] = array[i];
                     array[i] = tem;
+
+                    metricales.incrementMovimientos();
 
                     //Aqui corroboramos que ya dado un intercambio, este fue exitoso en al menos una ocación (*¯︶¯*)
                     intercambiado = true;
