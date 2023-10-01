@@ -4,6 +4,7 @@ import Modulo_2.Actividad_7.Utils.arrayUtils;
 import Modulo_2.Actividad_7.Process.bubbleSortFile;
 import Modulo_2.Actividad_7.Process.insertionSortFile;
 import Modulo_2.Actividad_7.Process.selectionSortFile;
+import Modulo_2.Actividad_7.Process.shellSortFile;
 import Modulo_2.Actividad_7.Ordenamiento.metricas;
 
 
@@ -30,6 +31,11 @@ public class Main {
         insertionSortFile.insertionSort(arrayAleatorio.clone(), MetricasInsertionSort);
         System.out.println("\nComparaciones del sorteo de insercion: " + MetricasInsertionSort.getComparacion());
         System.out.println("Movimientos totales del metodo de insercion: " + MetricasInsertionSort.getMovimientos());
+
+        metricas MetricasShellSort = new metricas();
+        shellSortFile.shellSort(arrayAleatorio.clone(), MetricasShellSort);
+        System.out.println("\nComparaciones del sorteo de shell: " + MetricasShellSort.getComparacion());
+        System.out.println("Movimientos totales del metodo de shell: " + MetricasShellSort.getMovimientos());
 
         System.out.println("\niralo aqui todo acomodadito ay pero que bonito");
         arrayUtils.imprimirArray(arrayAleatorio);
