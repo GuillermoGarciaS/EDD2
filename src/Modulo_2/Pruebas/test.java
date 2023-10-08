@@ -1,4 +1,4 @@
-package Modulo_2;
+package Modulo_2.Pruebas;
 
 public class test {
 

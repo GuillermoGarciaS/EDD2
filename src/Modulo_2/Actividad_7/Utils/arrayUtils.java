@@ -15,6 +15,7 @@ public class arrayUtils {
         return arrayAleatorio;
     }
 
+    /*
     public static void imprimirArray(int[] array) {
         for (int i = 0; i < array.length; i++) {
             System.out.print(array[i]);
@@ -31,4 +32,6 @@ public class arrayUtils {
         }
         
     }
+
+    */
 }
