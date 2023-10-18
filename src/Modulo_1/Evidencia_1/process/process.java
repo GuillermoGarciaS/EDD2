@@ -1,8 +1,8 @@
 package Modulo_1.Evidencia_1.process;
 
-import java.util.Random;
+//import java.util.Random;
 
-public class process implements Comparable<process> {
+/*public class process implements Comparable<process> {
     private static int priority;
     private int arrivalTime;
     private int serviceTime;
@@ -40,3 +40,4 @@ public class process implements Comparable<process> {
                 '}';
     }
 }
+*/

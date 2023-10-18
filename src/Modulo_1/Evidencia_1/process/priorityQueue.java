@@ -12,7 +12,7 @@ public class priorityQueue<E> extends Stack<Integer> {
     public void PriorityQueueWithCap(int cap) {
         this.cap = cap;
         this.lista = new LinkedList<>();
-        this.maxSize = maxSize;
+        //this.maxSize = maxSize;
         this.queue = new LinkedList<>();
     }
 
@@ -43,7 +43,7 @@ public class priorityQueue<E> extends Stack<Integer> {
     }
     public void offer(Integer element) {
         if(queue.size() < maxSize) {
-            queue.offer((E) element);
+            //queue.offer((E) element);
             System.out.println("Elemento " + element + " agregado a la cola.");
         } else {
             System.out.println("La cola está llena. Elemento " + element + " rechazado.");

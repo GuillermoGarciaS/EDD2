@@ -27,7 +27,7 @@ public class Main {
 
         metricas MetricaBubbleSort = new metricas();
         bubbleSortFile.bubbleSort(arrayAleatorio.clone(), MetricaBubbleSort);
-        System.out.println("\nEl sorteo de burbuja tuvo " + MetricaBubbleSort.getComparacion() + " comparaciones (≧◡≦)");
+        System.out.println("\nEl sorteo de burbuja tuvo " + MetricaBubbleSort.getComparacion() + " comparaciones (≧◡≦)"); //unicode
         System.out.println("Movimientos totales del método de burbuja: " + MetricaBubbleSort.getMovimientos() + " movimientos (´∩｡• ᵕ •｡∩`)");
 
         System.out.print("------------------------------------------------------------------------------");
