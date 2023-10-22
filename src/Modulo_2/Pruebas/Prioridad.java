@@ -1,13 +1,13 @@
 package Modulo_2.Pruebas;
 
-import java.util.Random;
-import java.util.PriorityQueue;
+//import java.util.Random;
+//import java.util.PriorityQueue;
 
 public class Prioridad {
 
     public static void main(String[] args) {
 
-        
+        /* 
         PriorityQueue pq = new PriorityQueue();
 
         Random random = new Random();
@@ -23,7 +23,7 @@ public class Prioridad {
         }
 
         System.out.println(pq);
-        
+        */
     }
     
 }
