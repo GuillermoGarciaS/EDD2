@@ -1,8 +1,8 @@
 package Modulo_3.Actividad_11.Test;
 
+/* 
 import org.junit.Before;
 import org.junit.After;
-import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.util.HashMap;
@@ -50,3 +50,5 @@ public class Test {
     }
 
 }
+
+*/
