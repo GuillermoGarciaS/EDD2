@@ -6,7 +6,7 @@ public class busquedaBinaria {
 
         int[] arreglo = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21};
 
-        int pos = busqueda(arreglo, 10, 0, arreglo.length - 1);
+        int pos = busquedaIterativa(arreglo, 10, 0, arreglo.length - 1);
 
         if (pos == -1) {
 
@@ -34,7 +34,7 @@ public class busquedaBinaria {
 
     }
 
-    public static int busqueda(int[] arreglo, int dato, int inicio, int fin) {
+    public static int busquedaIterativa(int[] arreglo, int dato, int inicio, int fin) {
 
         while (inicio <= fin) {
 

@@ -4,23 +4,20 @@ import java.util.Scanner;
 
 public class rank {
 
-    private static final Scanner scanner = new Scanner(System.in);
     public static void main(String[] args) {
-
+        Scanner scan = new Scanner(System.in);
         
-        int N = scanner.nextInt();
+        int i = scan.nextInt();
+        Double d = scan.nextDouble();
+        scan.nextLine();
 
-        scanner.skip("(\r\n|[\n\r\u2028\u2029\u0085])?");
-        
-        scanner.close();
-
-        if (N > 5 || N < 2) {
-                
-            System.out.println("Not Weird");
-            
-        } else if (N >= 6|| N <= 20) {
-            
-        }
-    }
+        String s = scan.nextLine();
     
+        System.out.println("String: " + s);
+        System.out.println("Double: " + d);
+        System.out.println("Int: " + i);
+        
+        scan.close();
+    }
+
 }

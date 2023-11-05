@@ -11,9 +11,13 @@ public class Main {
         
         int num = 10;
         System.out.println("El numero: " + num);
-        System.out.println("El numero en Fibonacci: " + Fibonacci.getFibonacci(num));
-        System.out.println("El numero exponencial: " + Factorial.getFactorialRecursivo(num));
+        System.out.println("Iterativos");
+        System.out.println("El numero en Fibonacci: " + Fibonacci.getFibonacciIterativo(num, num, num, num));
         System.out.println("El numero exponencial: " + Factorial.getFactorialIterativo(num));
+        
+        System.out.println("Recursivos");
+        System.out.println("El numero en Fibonacci: " + Fibonacci.getFibonacciRecursivo(num));
+        System.out.println("El numero exponencial: " + Factorial.getFactorialRecursivo(num));
 
         busquedaBinaria.main(args);
 
