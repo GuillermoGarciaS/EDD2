@@ -17,6 +17,11 @@ public class Fibonacci {
 
     public static int getFibonacciIterativo (int num, int a, int b, int c) {
 
+        if (num == 1) {
+            
+            return 1;
+        }
+
         a = 1;
         b = 1;
         c = 0;
